@@ -1,18 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ejercicio_1;
 
 /**
+ * [Clase que representa el sistema planetario sistema solar,permite calcular la
+ * atracción entre dos cuerpos Planet. ej.: PlanetarySystem SolarSystem = new
+ * PlanetarySystem();; SolarSystem.GravitationalPull();]
  *
- * @author PC
+ * @version [1.00.000 2022-02-23
+ * @author [Elkin Estiven González Cuellar -
+ * elkin.gonzalez-c@mail.escuelaing.edu.co ]
+ * @since [1.00.000]
+ *
  */
 public class PlanetarySystem {
 
+    /**
+     * Constante de gravitación universal unidades : N*m^2/kg^2
+     */
     public static final double G = 6.67300E-11;
-    public static final double AU = 1.496e+11; // m
+    /**
+     * Valor de unidad astronómica (Distancia de la tierra al sol) unidades : m
+     */
+    public static final double AU = 1.496e+11;
 
+    /**
+     * [Representa los planetas que contiene este sistema planetario con sus
+     * atributos más relevantes. ej.: Planet.EARTH,Planet.valueOf("EARTH"); ]
+     *
+     * @version [1.00.000 2022-02-23
+     * @author [Elkin Estiven González Cuellar -
+     * elkin.gonzalez-c@mail.escuelaing.edu.co ]
+     * @since [1.00.000]
+     *
+     */
     public enum Planet {
         MERCURY(1, 3.303e+23, 2.4397e6, 5.43, 0.39),
         VENUS(2, 4.869e+24, 6.0518e6, 5.24, 0.72),
@@ -22,10 +42,25 @@ public class PlanetarySystem {
         SATURN(6, 5.688e+26, 6.0268e7, 0.683, 9.54),
         URANUS(7, 8.686e+25, 2.5559e7, 1.27, 19.19),
         NEPTUNE(8, 1.024e+26, 2.4746e7, 1.64, 30.06);
-        public final double mass; // in kilogramos
-        public final double radius; // in metros
+        /**
+         * Masa en kg
+         */
+        public final double mass;
+        /**
+         * radio en metros
+         */
+        public final double radius;
+        /**
+         * densidad en g/c^3
+         */
         public final double density;
+        /**
+         * distancia al sol en unidades astronómicas
+         */
         public final double distanceToSun;
+        /**
+         * Posición que ocupa en relación con us distancia al sol
+         */
         public final int id;
 
         private Planet(int id, double mass, double radius, double density, double distanceToSun
@@ -59,6 +94,16 @@ public class PlanetarySystem {
 
     }
 
+    /**
+     * [Obtener un al azar un planeta contenido en Planet. ej.: Planet P1 =
+     * RandomPlanet();]
+     *
+     * @return C1 cuerpo seleccionado al azar
+     * @throws AssertionError()
+     * @author [Elkin Estiven González Cuellar]
+     * @since [1.00.000]
+     *
+     */
     public Planet RandomPlanet() {
         int randomNumber = (int) ((Math.random() * (8 - 1 + 1) + 1));
         Planet C1 = null;
@@ -95,6 +140,13 @@ public class PlanetarySystem {
 
     }
 
+    /**
+     * [Calcular la Atracción gravitacional entre dos cuerpos cualesquiera ej.:
+     * SolarSystem.GravitationalPull();]
+     * @author [Elkin Estiven González Cuellar]
+     * @since [1.00.000]
+     *
+     */
     public void GravitationalPull() {
         Planet P1 = RandomPlanet();
         Planet P2 = RandomPlanet();

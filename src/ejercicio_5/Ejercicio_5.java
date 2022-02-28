@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ejercicio_5;
 
 import ejercicio_4.Ejercicio_4;
@@ -11,8 +8,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
+ * [Clase principal que permite crear distintos tipos de vehiculos
  *
- * @author PC
+ * @version [1.00.000 2022-02-23
+ * @author [Elkin Estiven González Cuellar -
+ * elkin.gonzalez-c@mail.escuelaing.edu.co ]
+ * @since [1.00.000]
+ *
  */
 public class Ejercicio_5 {
 
@@ -21,6 +23,7 @@ public class Ejercicio_5 {
     public static void main(String[] args) {
         Ejercicio_5 e = new Ejercicio_5();
         e.MainMenu();
+
     }
 
     public void MainMenu() {
@@ -124,6 +127,5 @@ public class Ejercicio_5 {
     public void setList(Vehicle name) {
         this.list.add(name);
     }
-
 
 }

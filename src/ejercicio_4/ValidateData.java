@@ -1,4 +1,3 @@
-
 package ejercicio_4;
 
 import java.io.BufferedReader;
@@ -6,12 +5,25 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
+ * [Clase utilizada para validar datos que ingresa el usuario , en caso que se
+ * ingrese un dato que no corresponde con el tipo de dato solicitado;
  *
- * @author PC
+ * @version [1.00.000 2022-02-23
+ * @author [Elkin Estiven González Cuellar -
+ * elkin.gonzalez-c@mail.escuelaing.edu.co ]
+ * @since [1.00.000]
+ *
  */
 public class ValidateData {
-    //1.-----
 
+    /**
+     * [Valida un dato de tipo String]
+     *
+     * @return input
+     * @author [Elkin Estiven González Cuellar]
+     * @since [1.00.000]
+     *
+     */
     public static String Data() {
         String input = null;
         try {
@@ -22,8 +34,15 @@ public class ValidateData {
         }
         return input;
     }
-
-    //2.-----
+    /**
+     * [Valida un dato de tipo Int]
+     *
+     * @return Integer
+     * @throws NumberFormatException
+     * @author [Elkin Estiven González Cuellar]
+     * @since [1.00.000]
+     *
+     */
     public static int DataInt() {
         try {
             return (Integer.parseInt(Data()));
@@ -32,7 +51,15 @@ public class ValidateData {
         }
     }
 
-    //3.-----
+    /**
+     * [Valida un dato de tipo float]
+     *
+     * @return float
+     * @throws NumberFormatException
+     * @author [Elkin Estiven González Cuellar]
+     * @since [1.00.000]
+     *
+     */
     public static float DataFloat() {
         try {
             Float f = new Float(Data());
@@ -41,8 +68,15 @@ public class ValidateData {
             return (Float.NaN);
         }
     }
-
-    //4.-----
+    /**
+     * [Valida un dato de tipo double]
+     *
+     * @return double
+     * @throws NumberFormatException
+     * @author [Elkin Estiven González Cuellar]
+     * @since [1.00.000]
+     *
+     */
     public static double DataDouble() {
         try {
             Double d = new Double(Data());
@@ -52,7 +86,15 @@ public class ValidateData {
         }
     }
 
-    //5.-----
+    /**
+     * [Valida un dato de tipo float]
+     *
+     * @return char
+     * @throws Exception
+     * @author [Elkin Estiven González Cuellar]
+     * @since [1.00.000]
+     *
+     */
     public static char DataChar() {
         try {
             char resp = Data().charAt(0);
@@ -62,7 +104,15 @@ public class ValidateData {
         }
     }
 
-    //6.-----
+    /**
+     * [Valida un dato de tipo boolean]
+     *
+     * @return boolean
+     * @throws NumberFormatException
+     * @author [Elkin Estiven González Cuellar]
+     * @since [1.00.000]
+     *
+     */
     public static boolean DataBoolean() {
         try {
             return (Boolean.parseBoolean(Data()));

@@ -1,14 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ejercicio_5;
 
 import ejercicio_4.Vehicle;
 
 /**
+ * [Clase que representa un camión en el cual es importante tener en cuenta si
+ * va cargado y el peso que carga.;
  *
- * @author PC
+ * @version [1.00.000 2022-02-23
+ * @author [Elkin Estiven González Cuellar -
+ * elkin.gonzalez-c@mail.escuelaing.edu.co ]
+ * @since [1.00.000]
+ *
  */
 public class Truck extends Vehicle {
 
@@ -18,8 +20,11 @@ public class Truck extends Vehicle {
     public Truck() {
     }
 
-    public Truck(boolean load, int loadWeight, int numberOfPassengers, boolean crew, int numberOfWheels, int value, String brand, String enviroment1, String model, String energySource, String color) {
-        super(numberOfPassengers, crew, numberOfWheels, value, brand, enviroment1, model, energySource, color);
+    public Truck(boolean load, int loadWeight, int numberOfPassengers, boolean crew,
+            int numberOfWheels, int value, String brand, String enviroment1, String model,
+            String energySource, String color) {
+        super(numberOfPassengers, crew, numberOfWheels, value, brand, enviroment1,
+                model, energySource, color);
         this.load = load;
         this.loadWeight = loadWeight;
     }
@@ -36,7 +41,6 @@ public class Truck extends Vehicle {
         System.out.println("Camión encendido");
 
     }
-
 
     public int getLoadWeight() {
         return loadWeight;

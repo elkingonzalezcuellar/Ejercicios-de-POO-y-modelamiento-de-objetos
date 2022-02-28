@@ -1,14 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ejercicio_5;
 
 import ejercicio_4.Vehicle;
 
 /**
+ * [Clase que representa una moto, en las cuales es importante atributos como
+ * tener frenos ABS(sistema antibloqueo de ruedas) , el peso y si tiene llantas
+ * antideslizantes ;
  *
- * @author PC
+ * @version [1.00.000 2022-02-23
+ * @author [Elkin Estiven González Cuellar -
+ * elkin.gonzalez-c@mail.escuelaing.edu.co ]
+ * @since [1.00.000]
+ *
  */
 public class Motorcycle extends Vehicle {
 
@@ -19,20 +22,25 @@ public class Motorcycle extends Vehicle {
     public Motorcycle() {
     }
 
-    public Motorcycle(boolean ABS, boolean nonSlipTires, int weight, int numberOfPassengers, boolean crew, int numberOfWheels, int value, String brand, String enviroment1, String model, String energySource, String color) {
-        super(numberOfPassengers, crew, numberOfWheels, value, brand, enviroment1, model, energySource, color);
+    public Motorcycle(boolean ABS, boolean nonSlipTires, int weight, int numberOfPassengers,
+            boolean crew, int numberOfWheels, int value, String brand, String enviroment1,
+            String model, String energySource, String color) {
+        super(numberOfPassengers, crew, numberOfWheels, value, brand, enviroment1, model,
+                energySource, color);
         this.ABS = ABS;
         this.nonSlipTires = nonSlipTires;
         this.weight = weight;
     }
+
     @Override
     public void Move() {
         System.out.println("Motocicleta en movimiento");
 
     }
-@Override
+
+    @Override
     public void Start() {
-        
+
         System.out.println("Moto encendida");
 
     }

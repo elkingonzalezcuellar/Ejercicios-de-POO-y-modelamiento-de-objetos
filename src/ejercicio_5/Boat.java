@@ -1,14 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ejercicio_5;
 
 import ejercicio_4.Vehicle;
 
 /**
+ * [Clase que representa una lancha tomando en cuenta como atributos el ancho de
+ * la Proa(parte delantera) y el de la popa(parte trasera)
  *
- * @author PC
+ * @version [1.00.000 2022-02-23
+ * @author [Elkin Estiven González Cuellar -
+ * elkin.gonzalez-c@mail.escuelaing.edu.co ]
+ * @since [1.00.000]
+ *
  */
 public class Boat extends Vehicle {
 
@@ -19,8 +21,11 @@ public class Boat extends Vehicle {
     public Boat() {
     }
 
-    public Boat(boolean sailBoat, int rontWidth, int backWidth, int numberOfPassengers, boolean crew, int numberOfWheels, int value, String brand, String enviroment1, String model, String energySource, String color) {
-        super(numberOfPassengers, crew, numberOfWheels, value, brand, enviroment1, model, energySource, color);
+    public Boat(boolean sailBoat, int rontWidth, int backWidth, int numberOfPassengers,
+            boolean crew, int numberOfWheels, int value, String brand, String enviroment1, String model,
+            String energySource, String color) {
+        super(numberOfPassengers, crew, numberOfWheels, value, brand, enviroment1, model,
+                energySource, color);
         this.sailBoat = sailBoat;
         this.FrontWidth = FrontWidth;
         this.backWidth = backWidth;
@@ -39,7 +44,6 @@ public class Boat extends Vehicle {
         System.out.println("Lancha encendida.");
 
     }
-
 
     public int getBackWidth() {
         return backWidth;

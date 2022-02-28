@@ -1,14 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ejercicio_3;
 
 import java.util.Scanner;
 
 /**
+ * [Clase principal para ordenar un vector;
+ * @version [1.00.000 2022-02-23
+ * @author [Elkin Estiven González Cuellar -
+ * elkin.gonzalez-c@mail.escuelaing.edu.co ]
+ * @since [1.00.000]
  *
- * @author PC
  */
 public class Ejercicio_3 {
 
@@ -16,7 +17,7 @@ public class Ejercicio_3 {
     private static int selection;
 
     public static void main(String[] args) {
-        VectorAleatorio vec1 = new VectorAleatorio();
+        RandomVector vec1 = new RandomVector();
         vec1.GenerateArray();
         System.out.println("Hemos generado el vector : ");
         vec1.PrintArray();

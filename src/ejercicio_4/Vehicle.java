@@ -3,8 +3,13 @@ package ejercicio_4;
 import java.util.Date;
 
 /**
+ * [Clase que representa un vehiculo con algunos de sus atributos y metodos;
  *
- * @author PC
+ * @version [1.00.000 2022-02-23
+ * @author [Elkin Estiven González Cuellar -
+ * elkin.gonzalez-c@mail.escuelaing.edu.co ]
+ * @since [1.00.000]
+ *
  */
 public abstract class Vehicle {
 
@@ -22,7 +27,9 @@ public abstract class Vehicle {
     public Vehicle() {
     }
 
-    public Vehicle(int numberOfPassengers, boolean crew, int numberOfWheels, int value, String brand, String enviroment1, String model, String energySource, String color) {
+    public Vehicle(int numberOfPassengers, boolean crew, int numberOfWheels,
+            int value, String brand, String enviroment1, String model, String energySource,
+            String color) {
         this.numberOfPassengers = numberOfPassengers;
         this.crew = crew;
         this.numberOfWheels = numberOfWheels;
@@ -141,6 +148,15 @@ public abstract class Vehicle {
 
     public abstract void Start();
 
+    /**
+     * [Pide los atributos por consola que tiene un vehiculo hace uso de la
+     * clase ValidateData
+     *
+     * @return next vehiculo creado con los atributos ingresados
+     * @author [Elkin Estiven González Cuellar]
+     * @since [1.00.000]
+     *
+     */
     public Vehicle RequestVehicleData(Vehicle next) {
 
         System.out.print("Marca: ");
